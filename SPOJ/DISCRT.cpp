@@ -14,10 +14,10 @@ int main() {
     long long root[n];
     memset(root, 0, sizeof(root));
     for(int i=0;int(pow(i,k))<n;i++) {
-            if(int(pow(i,k))%n==mod && gcd(n,i)==1) {
-                    root[cnt]=i;
-                    cnt++;
-            }
+        if(int(pow(i,k))%n==mod && gcd(n,i)==1) {
+            root[cnt]=i;
+            cnt++;
+        }
     }
 	cout<<cnt<<"\n";
     for(int i=0;i<cnt;i++) {
