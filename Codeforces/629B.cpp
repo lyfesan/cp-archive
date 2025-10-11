@@ -41,5 +41,4 @@ int main()
 		ans=max(ans,min(m[i],f[i])*2);
 	}
 	cout<<ans<<"\n";
-
 }

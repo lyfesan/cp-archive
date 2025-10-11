@@ -1,15 +1,14 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-int main()
-{
+int main() {
+	ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
 	double total=0;
-	int k,s[200];
-	scanf("%d", &k);
-	for (int i=0;i<k;i++)
-	{
-		scanf("%d", &s[i]);
-		total+=s[i];
+	int k,x;
+	cin>>k;
+	for (int i=0;i<k;i++) {
+		cin>>x;
+		total+=x;
 	}
-	printf("%f\n", total/k);
+	cout<<setprecision(5)<<total/(double)k;
 }
